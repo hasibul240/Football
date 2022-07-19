@@ -3,7 +3,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+:root {
+    --purple: rgb(231, 3, 91);
+}
 body {
     margin: 0;
     padding: 0;
@@ -12,22 +14,24 @@ section, header{
     margin-bottom: 100px;
 }
 h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
 }
 
 .flex {
     display: flex;
 }
-
+/*------------------------
+ header section here 
+--------------------------*/
 .main_head_container {
     background: black;
     color: white;
@@ -62,8 +66,92 @@ h2 {
 .header_text a {
     text-decoration: none;
     color: white;
-    background-color: rgb(231, 3, 91);
+    background-color: var(--purple);
     padding: 10px;
     border-radius: 10px;
     font-weight: 500;
+}
+/*-----------------------
+blog section here 
+-------------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: 220px auto;
+    gap: 20px;
+}
+.match_buttons{
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    height: 215px;
+}
+.match_buttons>a{
+    padding: 13px 10px;
+    margin: 10px;
+    background-color:
+    white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.def_button{
+    background-color: var(--purple) !important;
+    color: white !important;
+}
+.blog{
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px 10px 0px 0px;
+}
+.main_blog{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog_img img{
+    width: 100%;
+}
+.watch_text{
+    padding: 15px;
+}
+.watch_text p{
+    width: 240px;
+    font-weight: 500;
+}
+.watch_text a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 5px;
+    border-radius: 5px;
+}
+.watch_comment span{
+    padding: 0 10px;
+}
+/*------------------------
+ footer section here 
+------------------------- */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+}
+.footer_links{
+    justify-content: space-evenly;
+    width: 800px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+footer>h2{
+    display: block;
+    margin: 50px;
+    padding-top: 100px;
+}
+.footer_links a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
