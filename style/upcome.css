@@ -3,7 +3,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+/*-----------------------------
+blog section starts here 
+------------------------------*/
 .main_blog_match {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,7 +39,9 @@
     margin: auto;
     text-align: center !important;
 }
-
+/*-----------------------------
+media query starts here 
+------------------------------*/
 @media only screen and (max-width: 450px) {}
 
 @media only screen and (max-width: 688px) {
