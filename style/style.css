@@ -1,25 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 :root {
     --purple: rgb(231, 3, 91);
     --ltpurple: rgb(255, 100, 159);
 }
+
 body {
     margin: 0;
     padding: 0;
 }
-section,header {margin-bottom: 100px;}
-h1 {font-size: 50px;}
-h2 {font-size: 40px;}
+
+section,
+header {
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
 }
+
 .flex {
     display: flex;
 }
+
 /*------------------------
  header section here 
 --------------------------*/
@@ -30,23 +46,29 @@ h2 {font-size: 40px;}
     gap: 30px;
     align-items: center;
 }
+
 .header_text {
     width: 50%;
     padding: 0px 65px;
 }
+
 .head_img {
     width: 50%;
 }
+
 .head_img img {
     width: 85%;
     margin-bottom: -20px;
 }
+
 .header_text p {
     margin-bottom: 50px;
 }
+
 .header_text h1 {
     margin: 0;
 }
+
 .header_text .top_btm .button {
     text-decoration: none;
     color: white;
@@ -57,20 +79,24 @@ h2 {font-size: 40px;}
     border: none;
     width: 150px;
 }
+
 /*-----------
  hover here
  -------------*/
 .top_btm:hover .button {
     background-image: linear-gradient(45deg, var(--ltpurple), var(--purple));
 }
+
 .watch_text a:hover {
     background: var(--purple);
     transition: .5s;
     color: white;
 }
+
 .view_btn a:hover {
     background-image: linear-gradient(45deg, var(--purple), var(--ltpurple));
 }
+
 /*-----------------------
 blog section here 
 -------------------------*/
@@ -79,6 +105,7 @@ blog section here
     grid-template-columns: 220px auto;
     gap: 20px;
 }
+
 .match_buttons {
     flex-direction: column;
     text-align: center;
@@ -87,6 +114,7 @@ blog section here
     border-radius: 10px;
     height: 215px;
 }
+
 .match_buttons>a {
     padding: 13px 10px;
     margin: 10px;
@@ -97,30 +125,37 @@ blog section here
     border-radius: 5px;
     font-weight: 600;
 }
+
 .def_button {
     background-color: var(--purple) !important;
     color: white !important;
 }
+
 .blog {
     border: 1px solid rgb(196, 196, 196);
     border-radius: 10px 10px 0px 0px;
 }
+
 .main_blog {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 }
+
 .blog_img img {
     width: 100%;
 }
+
 .watch_text {
     padding: 15px;
 }
+
 .watch_text p {
     width: 240px;
     font-weight: 500;
 }
+
 .watch_text a {
     text-decoration: none;
     color: black;
@@ -128,15 +163,18 @@ blog section here
     padding: 5px;
     border-radius: 5px;
 }
+
 .watch_comment span {
     padding: 0 10px;
 }
+
 .view_btn {
     padding-top: 50px;
     display: none;
     margin: auto;
     width: 95px;
 }
+
 .view_btn>a {
     background-image: linear-gradient(45deg, var(--ltpurple), var(--purple));
     padding: 10px 15px;
@@ -144,6 +182,7 @@ blog section here
     color: white;
     border-radius: 5px;
 }
+
 /*------------------------
  footer section here 
 ------------------------- */
@@ -152,22 +191,26 @@ footer {
     color: white;
     text-align: center;
 }
+
 .footer_links {
     justify-content: space-evenly;
     width: 800px;
     margin: auto;
     padding-bottom: 100px;
 }
+
 footer>h2 {
     display: block;
     margin: 50px;
     padding-top: 100px;
 }
+
 .footer_links a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
+
 /*-----------------------------
 media query starts here 
 ------------------------------*/
@@ -175,23 +218,29 @@ media query starts here
     .container {
         width: 100%;
     }
+
     .main_head_container {
         flex-direction: column;
     }
+
     .header_text {
         text-align: center;
         width: 90%;
         padding: 0;
     }
+
     .header_text h1 {
         font-size: 8vw !important;
     }
+
     .header_text p {
         font-size: 3.5vw !important;
     }
+
     .header_text a {
         font-size: 4vw !important;
     }
+
     .match_buttons {
         font-size: 4vw !important;
     }
@@ -202,53 +251,67 @@ media query starts here
         width: 95%;
         margin: auto;
     }
+
     .main_head_container {
         flex-direction: column;
     }
+
     .header_text {
         text-align: center;
         width: 90%;
         padding: 0;
     }
+
     .header_text h1 {
         font-size: 7vw;
     }
+
     .header_text p {
         font-size: 3vw;
     }
+
     .header_text a {
         font-size: 3vw;
     }
+
     .head_img img {
         width: 100%;
     }
+
     section,
     header {
         margin-bottom: 30px;
     }
+
     .blogs {
         grid-template-columns: auto;
     }
+
     .main_blog {
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
     .match_buttons {
         flex-direction: column !important;
         height: 225px !important;
         background: none;
         font-size: 3vw;
     }
+
     .match_buttons a {
         border: 1px solid gray;
     }
+
     .footer_links {
         width: 100%;
         flex-direction: column;
         gap: 18px;
     }
+
     .blog {
         border-radius: 20px 20px 0px 0px;
     }
+
     .view_btn {
         display: none !important;
     }
@@ -260,40 +323,51 @@ media query starts here
         width: 90%;
         margin: auto;
     }
+
     .head_img img {
         width: 100%;
     }
+
     .main_head_container {
         min-height: 500px;
     }
+
     .header_text {
         padding: 0 30px;
     }
+
     .header_text h1 {
         font-size: 5vw;
     }
+
     .blogs {
         grid-template-columns: auto;
     }
+
     .main_blog {
         grid-template-columns: repeat(2, 1fr)
     }
+
     .last {
         display: none;
     }
+
     .match_buttons {
         background: none;
         flex-direction: row;
         height: 75px;
     }
+
     .match_buttons a {
         border: 1px solid gray;
         flex-basis: 100%;
         text-align: center;
     }
+
     .footer_links {
         width: 100%;
     }
+
     .view_btn {
         display: block;
         padding: 0px 0px;
