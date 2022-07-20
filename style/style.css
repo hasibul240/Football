@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 h2 {
@@ -193,9 +193,153 @@ footer>h2 {
     color: white;
     text-align: center;
 }
-@media only screen and (max-width: 688px) {
-    .container{}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100%;
+    }
+
+    .main_head_container {
+        flex-direction: column;
+    }
+
+    .header_text {
+        text-align: center;
+        width: 90%;
+        padding: 0;
+    }
+
+    .header_text h1 {
+        font-size: 8vw !important;
+    }
+
+    .header_text p {
+        font-size: 4vw !important;
+    }
+
+    .header_text a {
+        font-size: 4vw !important;
+    }
+
+    .match_buttons {
+        font-size: 4vw !important;
+    }
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .main_head_container {
+        flex-direction: column;
+    }
+
+    .header_text {
+        text-align: center;
+        width: 90%;
+        padding: 0;
+    }
+
+    .header_text h1 {
+        font-size: 7vw;
+    }
+
+    .header_text p {
+        font-size: 3vw;
+    }
+
+    .header_text a {
+        font-size: 3vw;
+    }
+
+    .head_img img {
+        width: 100%;
+    }
+
+    section,
+    header {
+        margin-bottom: 30px;
+    }
+
+    .blogs {
+        grid-template-columns: auto;
+    }
+
+    .main_blog {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .match_buttons {
+        flex-direction: column !important;
+        height: 225px !important;
+        background: none;
+        font-size: 3vw;
+    }
+
+    .match_buttons a {
+        border: 1px solid gray;
+    }
+
+    .footer_links {
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .blog {
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .head_img img {
+        width: 100%;
+    }
+
+    .header_text p {
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header_text {
+        padding: 0 30px;
+    }
+
+    .blogs {
+        grid-template-columns: auto;
+    }
+
+    .main_blog {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .last {
+        display: none;
+    }
+
+    .match_buttons {
+        background: none;
+        flex-direction: row;
+        height: 75px;
+    }
+
+    .match_buttons a {
+        border: 1px solid gray;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer_links {
+        width: 100%;
+    }
 
 }
