@@ -55,7 +55,6 @@ h2 {font-size: 40px;}
     border-radius: 10px;
     font-weight: 500;
     border: none;
-    font-size: 16px;
     width: 150px;
 }
 /*-----------
@@ -188,7 +187,7 @@ media query starts here
         font-size: 8vw !important;
     }
     .header_text p {
-        font-size: 4vw !important;
+        font-size: 3.5vw !important;
     }
     .header_text a {
         font-size: 4vw !important;
