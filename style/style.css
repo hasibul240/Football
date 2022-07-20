@@ -94,7 +94,11 @@ h2 {
     transform: scaleX(1);
     transition: all .5s;
 }
-
+.watch_text a:hover {
+    background: var(--purple);
+    color: white;
+    transition: .5s;
+}
 /*-----------------------
 blog section here 
 -------------------------*/
