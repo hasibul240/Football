@@ -6,6 +6,7 @@
 
 :root {
     --purple: rgb(231, 3, 91);
+    --ltpurple: rgb(255, 100, 159);
 }
 
 body {
@@ -68,10 +69,10 @@ h2 {
     margin: 0;
 }
 
-.header_text .top_btm button {
+.header_text .top_btm .button {
     text-decoration: none;
     color: white;
-    background-color: var(--purple);
+    background-image: linear-gradient(45deg, var(--purple) , var(--ltpurple));
     padding: 10px;
     border-radius: 10px;
     font-weight: 500;
@@ -79,26 +80,21 @@ h2 {
     font-size: 16px;
     width: 150px;
 }
-.top_btm{
-    transition: 1s;
-}
-.fa-video { 
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all .5s;
-}
+
 /*-----------
  hover here
  -------------*/
-.button:hover>.fa-video {
-    transform: scaleX(1);
-    transition: all .5s;
-}
-.watch_text a:hover {
+ .top_btm:hover .button{
+    background-image: linear-gradient(45deg, var(--ltpurple), var(--purple));
+ }
+ .watch_text a:hover{
     background: var(--purple);
-    color: white;
     transition: .5s;
-}
+    color: white;
+ }
+ .view_btn a:hover{
+    background-image: linear-gradient(45deg, var(--ltpurple), var(--purple));
+ }
 /*-----------------------
 blog section here 
 -------------------------*/
@@ -173,25 +169,23 @@ blog section here
 .view_btn {
     padding-top: 50px;
     display: none;
-}
-
-.view_btn a {
-
-    background: var(--purple);
-    padding: 10px 15px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 50px;
-}
-
-.view_btn {
     margin: auto;
     width: 95px;
 }
+
+.view_btn>a {
+
+background: var(--purple);
+
+padding: 10px 15px;
+
+text-decoration: none;
+
+color: white;
+
+border-radius: 5px;
+}
+
 
 /*------------------------
  footer section here 
@@ -378,13 +372,9 @@ media query starts here
 
     .view_btn {
         display: block;
-        background: var(--purple);
-        padding: 10px 15px;
+        padding: 0px 0px;
         font-size: 16px;
         font-weight: 500;
-        color: white;
-        border: none;
-        border-radius: 5px;
         margin-top: 50px;
     }
 
