@@ -304,10 +304,8 @@ footer>h2 {
         width: 100%;
     }
 
-    .header_text p {
-        height: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .main_head_container {
+        min-height: 500px;
     }
 
     .header_text {
