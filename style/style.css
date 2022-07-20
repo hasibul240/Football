@@ -148,12 +148,16 @@ blog section here
 .watch_comment span {
     padding: 0 10px;
 }
-
-.view_btn>button {
+.view_btn{
+    padding-top: 50px;
     display: none;
+}
+.view_btn a {
+    
     background: var(--purple);
     padding: 10px 15px;
     font-size: 16px;
+    text-decoration: none;
     font-weight: 500;
     color: white;
     border: none;
@@ -291,6 +295,9 @@ footer>h2 {
     .blog {
         border-radius: 20px 20px 0px 0px;
     }
+    .view_btn{
+        display: none !important;
+    }
 }
 
 
@@ -338,6 +345,18 @@ footer>h2 {
 
     .footer_links {
         width: 100%;
+    }
+
+    .view_btn {
+        display: block;
+        background: var(--purple);
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
     }
 
 }
